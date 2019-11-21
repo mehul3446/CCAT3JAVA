@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="BeepBoop" >
+    </EditText>
+
+    <Button
+        android:id="@+id/myButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickInsertFeedingTime"
+        android:text="insertFeedingTime" >
+    </Button>
+
+    <Button
+        android:id="@+id/myButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickUpdateFeedingTime"
+        android:text="UpdateFeedingTime" >
+    </Button>
+
+    <Button
+        android:id="@+id/myButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickDeleteFeedingTime"
+        android:text="DeleteFeedingTime" >
+    </Button>
+
+    <Button
+        android:id="@+id/myButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickSyncFeedingTimes"
+        android:text="SyncFeedingTimes" >
+    </Button>
+
+    <Button
+        android:id="@+id/myButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickFetchWeightChanges"
+        android:text="FetchWeightChanges" >
+    </Button>
+
+    <Button
+        android:id="@+id/myButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickFetchBreakBeamRecords"
+        android:text="FetchBreakBeamRecords" >
+    </Button>
+
+    <Button
+        android:id="@+id/myButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickLoadCurrentFeedingTimes"
+        android:text="LoadCurrentFeedingTimes" >
+    </Button>
+
+    <Button
+        android:id="@+id/myButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickLoadWeightData"
+        android:text="LoadWeightData" >
+    </Button>
+
+    <Button
+        android:id="@+id/myButton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickLoadBreakBeamData"
+        android:text="LoadBreakBeamData" >
+    </Button>
+
+    <Button
+        android:id="@+id/myButton10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickDeleteAllBreakBeamRecords"
+        android:text="DeleteAllBreakBeamRecords" >
+    </Button>
+
+    <Button
+        android:id="@+id/myButton11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickDeleteAllFeedingRecords"
+        android:text="DeleteAllFeedingRecords" >
+    </Button>
+
+</LinearLayout>

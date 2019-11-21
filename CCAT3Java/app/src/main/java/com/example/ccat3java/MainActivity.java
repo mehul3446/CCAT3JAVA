@@ -15,8 +15,10 @@ import android.view.MenuItem;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-private Button feedingDataBtn;
-private Button feedingscheduleBtn;
+    private Button feedingDataBtn;
+    private Button feedingscheduleBtn;
+    private Button sqlDataBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,14 +26,6 @@ private Button feedingscheduleBtn;
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
         // Feeding Data Button
         feedingDataBtn = (Button)findViewById(R.id.button_feedingData);
         feedingDataBtn.setOnClickListener(new View.OnClickListener() {
@@ -50,6 +44,17 @@ private Button feedingscheduleBtn;
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this,FeedingSchedulejava.class);
+                startActivity(i);
+
+            }
+        });
+
+        // Feeding Data Button
+        sqlDataBtn = (Button)findViewById(R.id.button_sqlData);
+        sqlDataBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,SQLActivity.class);
                 startActivity(i);
 
             }
